@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<header>
+    <nav class="topnav">
+        <a href="#home" class="active">
+            <h1><span>&#129383;</span>John Doe</h1>
+        </a>
+<!--        normalniy list  -->
+        <ul id="nav-list">
+            <li><a href="#about" title="About me">About me</a></li>
+            <li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
+            <li><a href="#contacts" title="Contacts">Contacts</a></li>
+        </ul>
+<!--        ebaniy burger -->
+        <a id="menu">
+            <i id="menu-icon" class="fa-solid fa-bars"></i>
+            <div class="hamburger">
+                <a href="#about" title="About me">About me</a>
+                <a href="#portfolio" title="Portfolio">Portfolio</a>
+                <a href="#contacts" title="Contacts">Contacts</a>
+            </div>
+        </a>
+    </nav>
+</header>
+
+<body id="home">
+<section id="subtitle"></section>
+<section id="about">
+    <h2>About me</h2>
+    <img class="profile-image" src="https://upload.wikimedia.org/wikipedia/it/e/e4/Twin_Peaks%2C_Dale_Cooper.png" alt="kitten">
+    <p>I am a person who does his best to get shit done. Freelance fullstack developer and masters student at the Faculty of Regional Development at Mendel University in Brno.
+        Literature, game dev, cycling and swimming are my passions. Coffee and pies are a considerable benefit. </p>
+</section>
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Intro to portfolio. Mentioning the valuable skills, splitted in hard and soft categories that are presented later on as galleries in collapsable form. The latter chapter of this section is a grid of projects, that present separate cases as interactive mini panels.</p>
+    <div class="portfolio-pic-wrapper">
+        <img id="portfolio-pic" src="https://d2zp5xs5cp8zlg.cloudfront.net/image-61785-800.jpg" alt="kitten 2">
+        <label for="portfolio-pic"><i>portfolio pic</i></label>
+    </div>
+
+    <h3>Hyperskill Projects</h3>
+    <div class="portfolio-grid">
+        <div id="project-1" class="portfolio-grid-item open-window" onclick="openPopup(1)">text 1</div>
+        <div id="project-2" class="portfolio-grid-item open-window" onclick="openPopup(2)">text 2</div>
+        <div class="debug portfolio-grid-item controls">
+            <button class="add-project">+</button>
+            <button class="remove-project">-</button>
+        </div>
+
+    </div>
+</section>
+<section id="contacts">
+    <h2>Contacts</h2>
+    <ul class="contacts-list">
+        <li>
+            <a href="mailto:khomambe@proton.me">
+                <img class="contacts-img"
+                     src="https://d2zp5xs5cp8zlg.cloudfront.net/image-61785-800.jpg"
+                     alt="mail">
+                khomambe@proton.me
+            </a>
+        </li>
+        <li>
+            <img class="contacts-img"
+                 src="https://d2zp5xs5cp8zlg.cloudfront.net/image-61785-800.jpg"
+                 alt="mobile">
+            <p>+123456789</p>
+        </li>
+        <li>
+            <img class="contacts-img"
+                 src="https://d2zp5xs5cp8zlg.cloudfront.net/image-61785-800.jpg"
+                 alt="github">
+            <p>github</p>
+        </li>
+        <li>
+            <img class="contacts-img"
+                 src="https://d2zp5xs5cp8zlg.cloudfront.net/image-61785-800.jpg"
+                 alt="linkedin">
+            <p>+linkedin</p>
+        </li>
+    </ul>
+</section>
+</body>
+<footer>
+    <p>all rights reserved</p>
+</footer>
+<!--Popups-->
+<div id="popup-1" class="window">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup(1)">&times;</span>
+        <h2>Project Title</h2>
+        <p>Project description goes here...</p>
+    </div>
+</div>
+<div id="popup-2" class="window">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup(2)">&times;</span>
+        <h2>Project Title</h2>
+        <p>Project description goes here...</p>
+    </div>
+</div>
+<script src="index.js"></script>
+<script src="https://kit.fontawesome.com/fbb282b69b.js" crossorigin="anonymous"></script>
+</html>
